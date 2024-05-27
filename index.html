@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liste de course</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1>Liste de course</h1>
+    </header>
+
+    <div id="itemsDisplay"></div>
+
+    <div id="viewport">
+        <input type="text" id="filter" placeholder="Rechercher un élément" oninput="filterItems()">
+        <ul id="listeCourse"></ul>
+    </div>
+
+    <div class="controls">
+        <input type="text" id="newItem" placeholder="Ajouter un élément">
+        <input type="number" id="newItemPrice" placeholder="Prix">
+        <button onclick="addItem()">Ajouter</button>
+    </div>
+
+    <div id="totalPriceDisplay"></div>
+
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+
+</html>
